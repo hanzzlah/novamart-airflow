@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shipments>
+  <shipment>
+    <shipment_id>SH15001</shipment_id>
+    <supplier_id>SUP01</supplier_id>
+    <product_id>P100</product_id>
+    <quantity>50</quantity>
+    <ship_date>2024-01-15</ship_date>
+    <status>delivered</status>
+  </shipment>
+  <shipment>
+    <shipment_id>SH15002</shipment_id>
+    <supplier_id>SUP02</supplier_id>
+    <product_id>P400</product_id>
+    <quantity>20</quantity>
+    <ship_date>2024-01-15</ship_date>
+    <status>delivered</status>
+  </shipment>
+  <shipment>
+    <shipment_id>SH15003</shipment_id>
+    <supplier_id>SUP01</supplier_id>
+    <product_id>P600</product_id>
+    <quantity>10</quantity>
+    <ship_date>2024-01-15</ship_date>
+    <status>in_transit</status>
+  </shipment>
+</shipments>
