@@ -4,9 +4,9 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
-import pandas as pd
-from airflow.decorators import dag, task
-from airflow.models import Variable
+import pandas as pd # type: ignore
+from airflow.decorators import dag, task # type: ignore
+from airflow.models import Variable # type: ignore
 
 # Airflow 3.x Variables & Dynamic Paths
 DATA_ROOT = Path(Variable.get("DATA_ROOT", default_var="/usr/local/airflow"))
