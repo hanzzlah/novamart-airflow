@@ -2,6 +2,7 @@
 from datetime import datetime
 from airflow.decorators import dag, task # type: ignore
 from airflow.models import Variable # type: ignore
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator # type: ignore
 
 from include.transform_helpers import (
     transform_sales_raw,
@@ -102,8 +103,14 @@ def transform_load_pipeline():
     t7_load = load_core_tables(dq_results=t6_dq, biz_date=biz_date)
     t8_summary = dq_summary(dq_results=t6_dq, biz_date=biz_date)
 
-    # Set dependencies
-    t6_dq >> [t7_load, t8_summary]
+    trigger_daily_report = TriggerDagRunOperator(
+        task_id="trigger_daily_report",
+        trigger_dag_id="daily_report",
+        wait_for_completion=False,
+    )
+
+    # Update dependencies at bottom
+    t6_dq >> [t7_load, t8_summary] >> trigger_daily_report
 
 
 transform_load_pipeline()

@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd # type: ignore
 from airflow.decorators import dag, task # type: ignore
 from airflow.models import Variable # type: ignore
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator # type: ignore
 
 # Airflow 3.x Variables & Dynamic Paths
 DATA_ROOT = Path(Variable.get("DATA_ROOT", default_var="/usr/local/airflow"))
@@ -98,6 +99,14 @@ def ingest_files_pipeline():
     manifest = write_manifest([t_sales, t_orders, t_shipments, t_inventory])
 
     check >> [t_sales, t_orders, t_shipments, t_inventory] >> manifest
+    trigger_transform_load = TriggerDagRunOperator(
+        task_id="trigger_transform_load",
+        trigger_dag_id="transform_load",
+        wait_for_completion=False,
+    )
+
+    # Set dependency after manifest creation task
+    manifest >> trigger_transform_load
 
 
 ingest_files_pipeline()
