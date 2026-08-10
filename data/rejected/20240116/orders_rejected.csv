@@ -1,0 +1,2 @@
+business_date,source_file,raw_record,rejection_reason,rejected_at
+2024-01-16,orders_20240116.json,"{""order_id"": ""ORD16002"", ""customer_id"": ""C105"", ""order_ts"": ""2024-01-16T12:45:00"", ""status"": ""cancelled"", ""items"": [{""product_id"": ""P300"", ""quantity"": 1, ""unit_price"": 35.0}], ""total_amount"": 35.0, ""channel"": ""mobile""}",EXCLUDED_STATUS_CANCELLED,2026-08-07T13:02:30.246795+00:00

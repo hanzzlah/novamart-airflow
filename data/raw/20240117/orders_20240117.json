@@ -1,0 +1,54 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD17001",
+      "customer_id": "C106",
+      "order_ts": "2024-01-17T11:10:00",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "P100",
+          "quantity": 2,
+          "unit_price": 25.0
+        },
+        {
+          "product_id": "P400",
+          "quantity": 1,
+          "unit_price": 80.0
+        }
+      ],
+      "total_amount": 130.0,
+      "channel": "mobile"
+    },
+    {
+      "order_id": "ORD17002",
+      "customer_id": "C107",
+      "order_ts": "2024-01-17T15:40:00",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "P600",
+          "quantity": 1,
+          "unit_price": 150.0
+        }
+      ],
+      "total_amount": 150.0,
+      "channel": "web"
+    },
+    {
+      "order_id": "ORD17003",
+      "customer_id": "C108",
+      "order_ts": "2024-01-17T19:00:00",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "P200",
+          "quantity": 3,
+          "unit_price": 45.0
+        }
+      ],
+      "total_amount": 135.0,
+      "channel": "web"
+    }
+  ]
+}

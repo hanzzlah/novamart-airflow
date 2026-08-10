@@ -1,0 +1,8 @@
+sale_id,store_id,product_id,quantity,unit_price,sale_date,payment_method
+SL17001,S01,P200,2,45.0,2024-01-17,card
+SL17002,S01,P400,1,80.0,2024-01-17,upi
+SL17003,S02,P100,5,25.0,2024-01-17,cash
+SL17004,S02,P500,1,55.0,2024-01-17,card
+SL17005,S03,P300,2,35.0,2024-01-17,card
+SL17006,S03,P600,2,150.0,2024-01-17,card
+SL17007,S01,P100,1,25.0,2024-01-17,upi
