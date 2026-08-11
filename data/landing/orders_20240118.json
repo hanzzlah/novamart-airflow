@@ -1,0 +1,44 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD18001",
+      "customer_id": "C109",
+      "order_ts": "2024-01-18T08:30:00",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "P500",
+          "quantity": 1,
+          "unit_price": 55.0
+        }
+      ],
+      "total_amount": 55.0,
+      "channel": "web"
+    },
+    {
+      "order_id": "ORD18002",
+      "customer_id": "C110",
+      "order_ts": "2024-01-18T13:15:00",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "P100",
+          "quantity": 1,
+          "unit_price": 25.0
+        },
+        {
+          "product_id": "P200",
+          "quantity": 1,
+          "unit_price": 45.0
+        },
+        {
+          "product_id": "P300",
+          "quantity": 1,
+          "unit_price": 35.0
+        }
+      ],
+      "total_amount": 105.0,
+      "channel": "mobile"
+    }
+  ]
+}
