@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shipments>
+  <shipment>
+    <shipment_id>SH18001</shipment_id>
+    <supplier_id>SUP02</supplier_id>
+    <product_id>P600</product_id>
+    <quantity>12</quantity>
+    <ship_date>2024-01-18</ship_date>
+    <status>delivered</status>
+  </shipment>
+  <shipment>
+    <shipment_id>SH18002</shipment_id>
+    <supplier_id>SUP01</supplier_id>
+    <product_id>P200</product_id>
+    <quantity>35</quantity>
+    <ship_date>2024-01-18</ship_date>
+    <status>delivered</status>
+  </shipment>
+</shipments>

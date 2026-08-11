@@ -1,0 +1,5 @@
+status,file_name,row_count,source_type,ingested_at
+SUCCESS,sales_20240118.csv,6,csv,2026-08-11T06:35:02.113163+00:00
+SUCCESS,orders_20240118.json,2,json,2026-08-11T06:35:02.113163+00:00
+SUCCESS,shipments_20240118.xml,2,xml,2026-08-11T06:35:02.113163+00:00
+SUCCESS,inventory_20240118.xlsx,6,excel,2026-08-11T06:35:02.113163+00:00
