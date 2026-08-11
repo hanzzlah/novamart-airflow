@@ -1,0 +1,6 @@
+business_date,source,rows_in,rows_loaded,rows_rejected
+2024-01-18,sales,6,6,0
+2024-01-18,orders,2,2,0
+2024-01-18,inventory,6,6,0
+2024-01-18,shipments,2,2,0
+2024-01-18,order_items,4,4,0

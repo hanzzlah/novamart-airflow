@@ -1,0 +1,2 @@
+business_date,product_id,product_name,warehouse_id,quantity_on_hand,reorder_level
+2024-01-16,P300,Laptop Stand,W2,18,20

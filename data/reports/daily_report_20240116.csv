@@ -1,0 +1,8 @@
+metric,value
+pos_revenue,440.0
+online_revenue_completed,240.0
+total_revenue,680.0
+pos_txn_count,5.0
+online_completed_order_count,2.0
+shipments_delivered,2.0
+low_stock_sku_count,1.0
